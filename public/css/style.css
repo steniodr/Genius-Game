@@ -1,0 +1,341 @@
+body {
+  margin: 0;
+  background: rgb(64,195,34);
+  background: linear-gradient(0deg, rgba(64,195,34,1) 0%, rgba(45,101,253,1) 100%);
+}
+
+.main-game {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score-display {
+    color: #ffffff;
+    background-color: #212529;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    vertical-align: middle;
+    text-align: center;
+  
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.selected {
+    opacity: 0.8;
+}
+  
+.btn-back-to-top {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    outline: none; 
+    color: rebeccapurple; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 100%; 
+    font-size: 30px; 
+}
+
+.btn-back-to-top:hover {
+    color:rgb(56, 26, 85);
+}
+
+
+/* DEFAUT GAME  */
+
+.default {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.genius-default{
+  display: none;
+}
+
+.genius {
+  display: grid;
+  grid-template-areas: "green red" "yellow blue";
+  grid-gap: 10px;
+  border: 9px solid rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0);
+  border-radius: 100%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 500px;
+  height: 500px;
+
+}
+
+.green {
+  background-color: rgb(37, 236, 19);
+}
+.btl{
+    border-top-left-radius: 100%;
+}
+
+.red {
+  background-color: rgb(236, 19, 19);
+}
+.btr{
+    border-top-right-radius: 100%;
+}
+
+.yellow {
+  background-color: rgb(232, 236, 19);
+}
+.bbl{
+    border-bottom-left-radius: 100%;
+}
+
+.blue {
+  background-color: rgb(19, 41, 236);
+}
+.bbr{
+    border-bottom-right-radius: 100%;
+}
+
+
+/* CUSTOM GAME */
+
+.custom{
+    background: linear-gradient(0deg,
+    coral 0%, 
+    rebeccapurple) 100%;
+}
+
+.genius-custom{
+    display: none;
+}
+
+.grid {
+  flex: 0 0 auto;
+  perspective: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  grid-template-rows: repeat(3, 130px);
+  grid-gap: 20px;
+  max-width: 480px;
+  transform: rotate(45deg);
+
+  margin-top: 10%;
+  margin-bottom: 25%;
+
+}
+.grid div {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  color: transparent;
+  box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+}
+.grid div:nth-child(odd) {
+  animation: 1000ms ease-in-out infinite alternate pulse;
+}
+.grid div:nth-child(even) {
+  animation: 1000ms 1000ms ease-in-out infinite alternate pulse;
+}
+
+@keyframes pulse {
+  to {
+    transform: translate3d(0px, 0px, -60px);
+    box-shadow: 15px 15px 20px -20px rgba(black, 0.8);
+  }
+}
+
+div .red{
+  background-color: rgb(236, 19, 19);
+}
+div .green{
+    background-color: rgb(37, 236, 19);
+}
+div .yellow{
+    background-color: rgb(232, 236, 19);
+}
+div .blue{
+    background-color: rgb(19, 41, 236);
+}
+
+
+/* INFORMARTION  */
+.info{
+    border: 2px solid black;
+    border-radius: 10px;
+
+    margin-top: 10%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ABOUT ME */
+
+.aboutMe {
+    padding-top: 10%;
+    padding-bottom: 20px;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section {
+    font-family: 'Cinzel', sans-serif;
+    position: relative;
+    background: #161623;
+
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+section:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#F00, #F0F);
+    clip-path: circle(30% at right 70%);
+}
+
+section:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196F3, #E91E63);
+    clip-path: circle(30% at 10% 10%);
+}
+
+.about_container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.about_container .about_card {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.about_container .about_card .about_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.about_container .about_card:hover .about_content {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.about_container .about_card .about_content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.about_container .about_card .about_content .imgBx img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_container .about_card .about_content h3 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.about_container .about_card .about_content h3 span {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: initial;
+    color: #7A19C2;
+    font-weight: bold;
+}
+
+.about_container .about_card .about_content #spin {
+    color:#2196F3
+}
+
+.about_container .about_card .about_content #spin:after{
+    content: "";
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% { content: "Backend";}
+    50% { content: "Frontend";}
+    100% { content: "FullStack";}
+}
+
+.about_container .about_card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    left: 70px
+}
+
+.about_container .about_card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.about_container .about_card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.about_container .about_card .sci li a {
+    color: #FFFFFF;
+    font-size: 24px;
+}
