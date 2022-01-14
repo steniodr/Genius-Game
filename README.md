@@ -6,6 +6,7 @@
 <p align="center">
   <a href="#descricao">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#regras">Regras</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#recursos">Recursos Adicionados</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#demonstracao">Demonstração</a>
 </p>
 <p align="center">
@@ -19,7 +20,7 @@
 <div align="center">
   <img align="center" alt="html" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">&nbsp;
   <img align="center" alt="css" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">&nbsp;
-  <img align="center" alt="may-CSS" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" >&nbsp;
+  <img align="center" alt="bootstrap" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" >&nbsp;
   <img align="center" alt="javascript" height="50" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">&nbsp;
 </div>
 
@@ -38,9 +39,20 @@ Genius repetirá os dois primeiros sinais e, na mesma sequência, aumentará mai
 Continue desta forma, enquanto você conseguir repetir cada sequência de sinais corretamente.
 A dica é ficar sempre atento não somente a cor, mas também aos sons que irão te auxiliar
 
-<h2 id="demonstracao"> Demonstração </h2>
-<img src="https://github.com/steniodr/Genius-Game/tree/main/public/img/demo.gif" alt="Demo Genius Game" width="100%"/>
+<h2 id="recursos"> Recursos Adicionados </h2>
 
+ * Contagem de Pontos e Nivel na tela.
+ * Sons para as cores, para ajudar a identificar a cor.
+ * Modo de Jogo (Padrão e Customizado).
+ * Customização no estilo de mensagem.
+ * Divisão com um "Sobre mim".
+
+<h2 id="demonstracao"> Demonstração </h2>
+
+<h1 align="center">
+<img  src="https://github.com/steniodr/Genius-Game/blob/main/public/img/demo.gif" alt="Demo Genius Game" width="90%"/>
+</h1>
+  
 <h4 align="center">
   Desenvolvido por <a href="https://github.com/steniodr" target="_blank">Stenio D. Rapchan</a>
 </h4>
